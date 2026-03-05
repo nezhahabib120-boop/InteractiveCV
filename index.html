@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nezha Habib - Portfolio</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: { DEFAULT: '#A855F7', light: '#C084FC', dark: '#9333EA' },
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="selection-purple">
+
+    <!-- Top Navigation -->
+    <header class="fixed top-0 left-0 w-full bg-white/60 backdrop-blur-xl border-b border-white/40 p-4 z-[60] flex justify-center items-center">
+        <div class="max-w-7xl w-full flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-lg shadow-lg">NH</div>
+                <div class="hidden md:block">
+                    <h1 class="text-[#2D1B4E] font-bold text-sm leading-tight">Nezha Habib</h1>
+                    <p class="text-[10px] text-primary font-medium uppercase tracking-widest">Éducation & Logistique</p>
+                </div>
+            </div>
+            <nav class="hidden lg:flex items-center gap-2">
+                <a href="#home" class="nav-link flex items-center gap-2 px-4 py-2 rounded-xl text-[#4A3B6E] hover:text-primary transition-all active"><i data-lucide="user" class="w-4 h-4"></i> Accueil</a>
+                <a href="#experience" class="nav-link flex items-center gap-2 px-4 py-2 rounded-xl text-[#4A3B6E] hover:text-primary transition-all"><i data-lucide="briefcase" class="w-4 h-4"></i> Expérience</a>
+                <a href="#skills" class="nav-link flex items-center gap-2 px-4 py-2 rounded-xl text-[#4A3B6E] hover:text-primary transition-all"><i data-lucide="wrench" class="w-4 h-4"></i> Compétences</a>
+                <a href="#education" class="nav-link flex items-center gap-2 px-4 py-2 rounded-xl text-[#4A3B6E] hover:text-primary transition-all"><i data-lucide="graduation-cap" class="w-4 h-4"></i> Formation</a>
+                <a href="#references" class="nav-link flex items-center gap-2 px-4 py-2 rounded-xl text-[#4A3B6E] hover:text-primary transition-all"><i data-lucide="users" class="w-4 h-4"></i> Références</a>
+                <a href="#contact" class="nav-link flex items-center gap-2 px-4 py-2 rounded-xl text-[#4A3B6E] hover:text-primary transition-all"><i data-lucide="mail" class="w-4 h-4"></i> Contact</a>
+            </nav>
+            <button id="menu-toggle" class="lg:hidden p-2 text-[#4A3B6E]"><i data-lucide="menu"></i></button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-white/95 backdrop-blur-2xl z-[55] flex flex-col p-10 pt-24 hidden">
+        <button id="menu-close" class="absolute top-6 right-6 p-2 text-[#4A3B6E]"><i data-lucide="x"></i></button>
+        <nav class="space-y-4">
+            <a href="#home" class="mobile-link text-2xl font-bold text-[#2D1B4E] flex items-center gap-4 py-4 border-b border-gray-100">Accueil</a>
+            <a href="#experience" class="mobile-link text-2xl font-bold text-[#2D1B4E] flex items-center gap-4 py-4 border-b border-gray-100">Expérience</a>
+            <a href="#skills" class="mobile-link text-2xl font-bold text-[#2D1B4E] flex items-center gap-4 py-4 border-b border-gray-100">Compétences</a>
+            <a href="#education" class="mobile-link text-2xl font-bold text-[#2D1B4E] flex items-center gap-4 py-4 border-b border-gray-100">Formation</a>
+            <a href="#references" class="mobile-link text-2xl font-bold text-[#2D1B4E] flex items-center gap-4 py-4 border-b border-gray-100">Références</a>
+            <a href="#contact" class="mobile-link text-2xl font-bold text-[#2D1B4E] flex items-center gap-4 py-4 border-b border-gray-100">Contact</a>
+        </nav>
+    </div>
+
+    <main class="w-full min-h-screen pt-20">
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- Hero -->
+            <section id="home" class="min-h-[90vh] flex flex-col justify-center items-center px-6 md:px-20 py-20 text-center relative overflow-hidden">
+                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-primary/5 blur-[120px] rounded-full -mt-96"></div>
+                <div class="space-y-10 relative z-10" data-aos="zoom-out">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest">
+                        <span class="w-2 h-2 rounded-full bg-primary animate-ping"></span> Disponible
+                    </div>
+                    <div class="flex flex-col items-center gap-8">
+                        <img src="https://i.ibb.co/Q3bJJ8CW/1772569662779.png" class="w-40 h-40 md:w-56 md:h-56 rounded-full border-8 border-white/40 shadow-2xl object-cover">
+                        <h1 class="text-5xl md:text-7xl font-bold text-[#2D1B4E]">Bonjour, je suis <span class="text-primary">Nezha Habib</span>.</h1>
+                    </div>
+                    <p class="text-xl md:text-2xl text-[#4A3B6E] max-w-3xl mx-auto leading-relaxed">Étudiante en Économie Internationale, passionnée par le développement Web Frontend (Débutante) et l'éducation. Polyvalente avec une expérience en gestion et en animation socio-culturelle.</p>
+                    <div class="flex flex-wrap justify-center gap-6 pt-6">
+                        <a href="#contact" class="px-10 py-5 bg-primary text-white font-bold rounded-2xl shadow-xl hover:bg-primary-dark transition-all">Me contacter</a>
+                        <a href="#experience" class="px-10 py-5 bg-white/40 border border-white/40 text-[#2D1B4E] font-bold rounded-2xl hover:bg-white/60 transition-all shadow-lg">Mon parcours</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience -->
+            <section id="experience" class="px-6 md:px-20 py-32">
+                <div class="flex items-center gap-4 mb-16" data-aos="fade-right">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center text-primary shadow-sm"><i data-lucide="briefcase"></i></div>
+                    <h2 class="text-4xl font-bold text-[#2D1B4E]">Expérience Professionnelle</h2>
+                </div>
+                <div class="space-y-12 border-l-4 border-[#2D1B4E]/5 ml-6 pl-10">
+                    <div class="glass-card p-8 rounded-[2rem]" data-aos="fade-left">
+                        <h3 class="text-2xl font-bold text-[#2D1B4E]">Préparateur de commandes</h3>
+                        <p class="text-primary font-bold text-lg">Pépinière Azura • Chtouka Ait Baha</p>
+                        <p class="text-xs font-bold text-[#4A3B6E] uppercase mt-2">23 MAI 2025 - 30 JUILLET 2025</p>
+                        <ul class="mt-4 space-y-2 text-[#4A3B6E]">
+                            <li>• Préparation de l'emballage</li>
+                            <li>• Gestion de stock</li>
+                            <li>• Control de marchandise</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card p-8 rounded-[2rem]" data-aos="fade-left" data-aos-delay="200">
+                        <h3 class="text-2xl font-bold text-[#2D1B4E]">Maitresse</h3>
+                        <p class="text-primary font-bold text-lg">Crèche Al Hidaya • Drarga, Agadir</p>
+                        <p class="text-xs font-bold text-[#4A3B6E] uppercase mt-2">01 SEPT 2024 - 20 MAI 2025</p>
+                        <ul class="mt-4 space-y-2 text-[#4A3B6E]">
+                            <li>• Accueil et accompagnement des enfants</li>
+                            <li>• Animation d'activités éducatives et ludiques</li>
+                            <li>• Encadrement des temps de repas et d'hygiène</li>
+                            <li>• Observation et suivi du développement</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card p-8 rounded-[2rem]" data-aos="fade-left" data-aos-delay="400">
+                        <h3 class="text-2xl font-bold text-[#2D1B4E]">Vendeuse / Maitresse</h3>
+                        <p class="text-primary font-bold text-lg">Pâtisserie • Drarga, Agadir</p>
+                        <p class="text-xs font-bold text-[#4A3B6E] uppercase mt-2">01 JUILLET 2024 - 30 AOUT 2024</p>
+                        <ul class="mt-4 space-y-2 text-[#4A3B6E]">
+                            <li>• Accueil et conseil client</li>
+                            <li>• Vente et encaissement</li>
+                            <li>• Mise en place et présentation des produits</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section id="skills" class="px-6 md:px-20 py-32">
+                <div class="flex items-center gap-4 mb-16" data-aos="fade-right">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center text-primary shadow-sm"><i data-lucide="wrench"></i></div>
+                    <h2 class="text-4xl font-bold text-[#2D1B4E]">Compétences & Langues</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Professionnelles -->
+                    <div class="glass-card p-8 rounded-[2rem]" data-aos="zoom-in">
+                        <h3 class="font-bold text-[#2D1B4E] mb-6 flex items-center gap-2"><i data-lucide="book-open" class="w-5 h-5 text-primary"></i> Professionnelles</h3>
+                        <div class="space-y-4 text-xs font-bold text-[#4A3B6E] uppercase">
+                            <p>Gestion des groupes</p><div class="h-1.5 bg-primary/10 rounded-full overflow-hidden"><div class="h-full bg-primary w-[90%]"></div></div>
+                            <p>Technique de vente</p><div class="h-1.5 bg-primary/10 rounded-full overflow-hidden"><div class="h-full bg-primary w-[85%]"></div></div>
+                            <p>Gestion de stock</p><div class="h-1.5 bg-primary/10 rounded-full overflow-hidden"><div class="h-full bg-primary w-[80%]"></div></div>
+                            <p>Frontend (Débutante)</p><div class="h-1.5 bg-primary/10 rounded-full overflow-hidden"><div class="h-full bg-primary w-[30%]"></div></div>
+                        </div>
+                    </div>
+                    <!-- Tech Stack -->
+                    <div class="glass-card p-8 rounded-[2rem]" data-aos="zoom-in" data-aos-delay="100">
+                        <h3 class="font-bold text-[#2D1B4E] mb-6 flex items-center gap-2"><i data-lucide="code" class="w-5 h-5 text-primary"></i> Tech Stack</h3>
+                        <div class="space-y-4 text-xs font-bold text-[#4A3B6E] uppercase">
+                            <p>Frontend Dev</p><div class="h-1.5 bg-primary/10 rounded-full overflow-hidden"><div class="h-full bg-primary w-[30%]"></div></div>
+                            <p>HTML & CSS</p><div class="h-1.5 bg-primary/10 rounded-full overflow-hidden"><div class="h-full bg-primary w-[40%]"></div></div>
+                            <p>JavaScript</p><div class="h-1.5 bg-primary/10 rounded-full overflow-hidden"><div class="h-full bg-primary w-[25%]"></div></div>
+                        </div>
+                    </div>
+                    <!-- Savoir-être -->
+                    <div class="glass-card p-8 rounded-[2rem]" data-aos="zoom-in" data-aos-delay="200">
+                        <h3 class="font-bold text-[#2D1B4E] mb-6 flex items-center gap-2"><i data-lucide="users" class="w-5 h-5 text-primary"></i> Savoir-être</h3>
+                        <div class="space-y-3">
+                            <p class="p-3 bg-white/40 rounded-xl text-sm font-medium">Travail d'équipe</p>
+                            <p class="p-3 bg-white/40 rounded-xl text-sm font-medium">Gestion du temps</p>
+                            <p class="p-3 bg-white/40 rounded-xl text-sm font-medium">Communication</p>
+                        </div>
+                    </div>
+                    <!-- Langues -->
+                    <div class="glass-card p-8 rounded-[2rem]" data-aos="zoom-in" data-aos-delay="300">
+                        <h3 class="font-bold text-[#2D1B4E] mb-6 flex items-center gap-2"><i data-lucide="globe" class="w-5 h-5 text-primary"></i> Langues</h3>
+                        <div class="space-y-4 text-sm font-medium">
+                            <div class="flex justify-between"><span>Arabe</span><div class="flex gap-1"><div class="w-2 h-2 rounded-full bg-primary"></div><div class="w-2 h-2 rounded-full bg-primary"></div><div class="w-2 h-2 rounded-full bg-primary"></div><div class="w-2 h-2 rounded-full bg-primary"></div><div class="w-2 h-2 rounded-full bg-primary"></div></div></div>
+                            <div class="flex justify-between"><span>Français</span><div class="flex gap-1"><div class="w-2 h-2 rounded-full bg-primary"></div><div class="w-2 h-2 rounded-full bg-primary"></div><div class="w-2 h-2 rounded-full bg-primary"></div><div class="w-2 h-2 rounded-full bg-gray-200"></div><div class="w-2 h-2 rounded-full bg-gray-200"></div></div></div>
+                            <div class="flex justify-between"><span>Anglais</span><div class="flex gap-1"><div class="w-2 h-2 rounded-full bg-primary"></div><div class="w-2 h-2 rounded-full bg-primary"></div><div class="w-2 h-2 rounded-full bg-primary"></div><div class="w-2 h-2 rounded-full bg-gray-200"></div><div class="w-2 h-2 rounded-full bg-gray-200"></div></div></div>
+                            <div class="flex justify-between"><span>Tamazight</span><div class="flex gap-1"><div class="w-2 h-2 rounded-full bg-primary"></div><div class="w-2 h-2 rounded-full bg-primary"></div><div class="w-2 h-2 rounded-full bg-primary"></div><div class="w-2 h-2 rounded-full bg-primary"></div><div class="w-2 h-2 rounded-full bg-primary"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section id="education" class="px-6 md:px-20 py-32">
+                <div class="flex items-center gap-4 mb-16" data-aos="fade-right">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center text-primary shadow-sm"><i data-lucide="graduation-cap"></i></div>
+                    <h2 class="text-4xl font-bold text-[#2D1B4E]">Formation</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="glass-card p-8 rounded-[2rem]" data-aos="flip-up">
+                        <span class="text-xs font-bold text-primary uppercase">2025 - 2026</span>
+                        <h3 class="text-xl font-bold text-[#2D1B4E] mt-2">1ère année Économie Internationale</h3>
+                        <p class="text-[#4A3B6E] text-sm">FSJES - IBN ZOHR</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-[2rem]" data-aos="flip-up" data-aos-delay="200">
+                        <span class="text-xs font-bold text-primary uppercase">2023</span>
+                        <h3 class="text-xl font-bold text-[#2D1B4E] mt-2">Première année géologie</h3>
+                        <p class="text-[#4A3B6E] text-sm">Faculté des sciences - IBN ZOHR</p>
+                    </div>
+                    <div class="glass-card p-8 rounded-[2rem]" data-aos="flip-up" data-aos-delay="400">
+                        <span class="text-xs font-bold text-primary uppercase">2023</span>
+                        <h3 class="text-xl font-bold text-[#2D1B4E] mt-2">Baccalauréat science physique</h3>
+                        <p class="text-[#4A3B6E] text-sm">Lycée AL Amal</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- References -->
+            <section id="references" class="px-6 md:px-20 py-32">
+                <div class="flex items-center gap-4 mb-16" data-aos="fade-right">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center text-primary shadow-sm"><i data-lucide="users"></i></div>
+                    <h2 class="text-4xl font-bold text-[#2D1B4E]">Références</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="glass-card p-8 rounded-3xl flex items-center gap-6" data-aos="fade-up">
+                        <div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary"><i data-lucide="user" class="w-8 h-8"></i></div>
+                        <div><h3 class="text-xl font-bold">Madame Roukaya</h3><p class="text-primary text-sm">Directrice Al Hidaya</p><p class="text-xs text-[#4A3B6E]">06 70 13 05 07</p></div>
+                    </div>
+                    <div class="glass-card p-8 rounded-3xl flex items-center gap-6" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary"><i data-lucide="user" class="w-8 h-8"></i></div>
+                        <div><h3 class="text-xl font-bold">Khadija Faouzi</h3><p class="text-primary text-sm">Directrice Edison</p><p class="text-xs text-[#4A3B6E]">06 27 11 88 10</p></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact" class="px-6 md:px-20 py-32 text-center">
+                <div class="flex items-center justify-center gap-4 mb-16" data-aos="fade-up">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-500/10 flex items-center justify-center text-primary shadow-sm"><i data-lucide="mail"></i></div>
+                    <h2 class="text-4xl font-bold text-[#2D1B4E]">Get in Touch</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <a href="mailto:nezhahabib120@gmail.com" class="glass-card p-10 rounded-[2rem] flex flex-col items-center gap-4 group" data-aos="zoom-in">
+                        <div class="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all"><i data-lucide="mail" class="w-10 h-10"></i></div>
+                        <h3 class="font-bold">Email</h3><p class="text-xs">nezhahabib120@gmail.com</p>
+                    </a>
+                    <a href="https://wa.me/212699865442" target="_blank" class="glass-card p-10 rounded-[2rem] flex flex-col items-center gap-4 group" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all"><i data-lucide="phone" class="w-10 h-10"></i></div>
+                        <h3 class="font-bold">WhatsApp</h3><p class="text-xs">06 99 86 54 42</p>
+                    </a>
+                    <a href="#" class="glass-card p-10 rounded-[2rem] flex flex-col items-center gap-4 group" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all"><i data-lucide="map-pin" class="w-10 h-10"></i></div>
+                        <h3 class="font-bold">Localisation</h3><p class="text-xs">Agadir, Maroc</p>
+                    </a>
+                </div>
+            </section>
+
+            <footer class="p-16 text-center text-sm text-[#4A3B6E]/60 border-t border-white/20">
+                © 2026 Nezha Habib. Fait avec passion à Agadir.
+                <button onclick="window.scrollTo({top:0, behavior:'smooth'})" class="block mx-auto mt-8 text-primary font-bold uppercase tracking-widest text-xs">Retour en haut</button>
+            </footer>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
