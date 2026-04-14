@@ -1,6 +1,14 @@
+// Initialize Icons
 lucide.createIcons();
-AOS.init({ duration: 1000, once: false, mirror: true });
 
+// Initialize Animations
+AOS.init({ 
+    duration: 1000, 
+    once: false, 
+    mirror: true 
+});
+
+// Mobile Menu Logic
 const menuToggle = document.getElementById('menu-toggle');
 const menuClose = document.getElementById('menu-close');
 const mobileMenu = document.getElementById('mobile-menu');
@@ -13,14 +21,22 @@ navLinks.forEach(link => {
     link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
 });
 
+// Active Section Highlighting on Scroll
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('section');
     let current = '';
+    
     sections.forEach(section => {
-        if (pageYOffset >= section.offsetTop - 200) current = section.getAttribute('id');
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 200) {
+            current = section.getAttribute('id');
+        }
     });
+
     navLinks.forEach(link => {
         link.classList.remove('active');
-        if (link.getAttribute('href').includes(current)) link.classList.add('active');
+        if (link.getAttribute('href').includes(current)) {
+            link.classList.add('active');
+        }
     });
 });
